@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    background: #282726;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+h1 {
+    color: #F9F4DA;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+p {
+    color: #8E8E8E;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 0.5em;
+}
+
+.card-holder {
+    height: 65px;
+    margin: 2em auto;
+    width: 65%;
+    border-radius: 0.25em;
+    color: #F9F4DA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+/* card wrong guess */
+.card-wrong-guess {
+    background: #7A5EA7;
+    border: 2px dashed #323232;
+    font-style: italic;
+}
+
+.card-win {
+    background: #10A95B;
+}
+
+.card-lose {
+    background: #BA2A2A;
+}
+
+/* languages */
+.languages-holder {
+    display: flex;
+    width: 50%;
+    margin: 1em auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.15em;
+}
+
+.language {
+    padding: 0.4em;
+    border-radius: 0.3em;
+    font-weight: bold;
+}
+
+/* word guess section */
+.word-guess {
+    display: flex;
+    margin: 3em 0;
+    gap: 0.2em;
+    justify-content: center;
+}
+
+.word-guess .letter {
+    width: 45px;
+    height: 45px;
+    background: #323232;
+    border-bottom: 1px solid #F9F4DA;
+}
+
+/* alphabet letters section */
+.letters {
+    display: flex;
+    width: 85%;
+    margin: 2em auto;
+    gap: 0.5em;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #1E1E1E;
+}
+
+.letters button.letter {
+    width: 50px;
+    height: 50px;
+    background: #FCBA29;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border: 2px solid #D7D7D7;
+    font-family: inherit;
+}
