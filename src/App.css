@@ -37,27 +37,35 @@ p {
     height: 65px;
     margin: 2em auto;
     width: 65%;
-    border-radius: 0.25em;
     color: #F9F4DA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1.25rem;
 }
 
-/* card wrong guess */
-.card-wrong-guess {
+.card {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.25em;
+}
+
+.wrong-guess-card {
     background: #7A5EA7;
     border: 2px dashed #323232;
     font-style: italic;
 }
 
-.card-win {
+.win-card {
     background: #10A95B;
 }
 
-.card-lose {
+.game-over-card {
     background: #BA2A2A;
+}
+
+.sub-text {
+    font-size: 1rem;
 }
 
 /* languages */
@@ -74,6 +82,18 @@ p {
     padding: 0.4em;
     border-radius: 0.3em;
     font-weight: bold;
+    position: relative;
+}
+
+.died-lang {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0.4em;
+    border-radius: 0.3em;
 }
 
 /* word guess section */
@@ -89,6 +109,12 @@ p {
     height: 45px;
     background: #323232;
     border-bottom: 1px solid #F9F4DA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F9F4DA;
+    font-weight: bold;
+    font-size: 1.25rem;
 }
 
 /* alphabet letters section */
@@ -114,4 +140,22 @@ p {
     font-size: 1.25rem;
     border: 2px solid #D7D7D7;
     font-family: inherit;
+}
+
+.letters button.disable {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* new game */
+.new-game-btn {
+    background: #11B5E5;
+    border: 2px solid #D7D7D7;
+    border-radius: 0.3em;
+    color: #1E1E1E;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: inherit;
+    width: 200px;
+    padding: 0.5em;
 }
