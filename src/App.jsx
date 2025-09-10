@@ -40,6 +40,8 @@ function App() {
   useEffect(() => {
     if (gameOver || win) {
       setAlphabet(prevAlph => prevAlph.map(alph => ({ ...alph, disable: true })))
+      newGameRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+      newGameRef.current.focus()
     }
 
     if (win) {
