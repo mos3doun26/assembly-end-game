@@ -6,6 +6,7 @@ import languages from './languages'
 import Alphabet from './Alphabet';
 import LetterInGuess from './LetterInGuess'
 import Card from './Card'
+import Confetti from 'react-confetti'
 
 const getAlphabet = () => {
   return Array.from({ length: 26 }, (_, i) => {
@@ -103,6 +104,7 @@ function App() {
 
   return (
     <main className='container'>
+      {win && <Confetti />}
       <h1>Assembly: Endgame</h1>
       <p>Guess the word in under 8 attempts to keep the<br />programming world safe from Assembly!</p>
       <div className='card-holder'>{card}</div>
