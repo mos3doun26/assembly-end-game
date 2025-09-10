@@ -1,12 +1,12 @@
-# React + Vite
+# A word-guess web app with interactive UI using React library.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## components
+  - Card -> to show the game status
+  - Language -> present one language that takes data, then show its style.
+  - LetterInGess -> present one letter of the random word to guess
+  - Alphabet -> present a button that holds one alphabet letter
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Game Status
+  - User enters a Wrong guess -> show the card of destroyed language and make the language on the turn die
+  - User won the game -> show the card of winning and the confetti component
+  - User lost the game -> show the card of GameOver and show the rest of the unguessed letters in a different color.
